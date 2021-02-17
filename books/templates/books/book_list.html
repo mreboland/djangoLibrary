@@ -1,6 +1,6 @@
 <h1>All books</h1>
 
-<!-- Using template tags to loop over our books. -->
+<!-- Using template tags to loop over our books. We are looping over an object containing all avail books in our model courtesy of ListView. The name of this object is object_list. -->
 {% for book in object_list %}
     <ul>
         <li>Title: {{ book.title }}</li>

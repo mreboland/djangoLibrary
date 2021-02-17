@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("api/", include("api.urls")),
     # Empty string to indicate home page, internally the user will be redirected directly to the books app.
     path("", include("books.urls")),
 ]
