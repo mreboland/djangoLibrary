@@ -1,0 +1,11 @@
+<h1>All books</h1>
+
+<!-- Using template tags to loop over our books. -->
+{% for book in object_list %}
+    <ul>
+        <li>Title: {{ book.title }}</li>
+        <li>Subtitle: {{ book.subtitle }}</li>
+        <li>Author: {{ book.author }}</li>
+        <li>ISBN: {{ book.isbn }}</li>
+    </ul>
+{% endfor %}
